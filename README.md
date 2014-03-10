@@ -33,22 +33,26 @@ Query Router:
 ##Operations
 
 Access to the cluster by connecting to the query router (mongos):
+
 `
     mongo --host localhost --port 24000
 `
 
-Enable Sharding for a database :  
+Enable Sharding for a database :
+
 `
     sh.enableSharding("<database>");
 `
 
-Enable Sharding for a Collection
+Enable Sharding for a Collection :
+
 `   
     sh.shardCollection("<database>.<collection>", {<field>: 1});
 `
 
-Check Cluster Status
+Check Cluster Status :
+
 `
     sh.status();
-    db.city.getShardDistribution();
+    db.<collection>.getShardDistribution();
 `
