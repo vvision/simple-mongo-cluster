@@ -5,7 +5,7 @@ Easily deploy a MongoDB cluster on a single machine for testing purpose.
 
 ##Architecture
 
-The cluster is composed of two shards, tree config servers and one query router.
+The cluster is composed of two shards, three config servers and one query router.
 Each shard is a replica set with one primary node and two secondary nodes.
 
 ##Port
